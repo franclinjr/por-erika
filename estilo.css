@@ -1,0 +1,412 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    border: none;
+    font-size: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'open-sans-condensed', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ddd9d9;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7f433f;
+    border-radius: 5px;
+}
+
+#conteudo-cabeçalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0px auto;
+
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+}
+
+.menu-links{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0c0c0e;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+.menu-links:hover{
+    color:  rgb(124, 68, 64);
+}
+
+.imagem-back{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#conteudo-inicial , #conteudo-historias , #conteudo-carroseu{
+    width: 80%;
+    margin: 50px auto;
+}
+
+h1,h3 {
+    color: #7f433f;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: justify;
+    margin: 28px 0px;
+}
+
+h3{
+    font-size: 32px;
+    line-height: 32px;
+    margin:0px;
+}
+
+.paragrafo-card{
+    font-size: 16px;
+    line-height: 24px;
+    color:#0c0c0e; 
+    font-weight: 100;
+    text-align: center;
+}
+
+.paragrafo-card{
+    font-size: 20px;
+    line-height: 32px;
+    color:#28282f; 
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    color:#0c0c0e; 
+    font-weight: 100;
+    line-height: 32px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+
+#conteudo-mural-topo{
+    background-color: #F5F8FA;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.imagem-mural-topo{
+    width: 55%;
+    height: auto;
+}
+
+.texto-mural-topo{
+    width: 40%;
+    height: auto;
+    align-items: center;
+}
+
+#conteudo-mural-baixo{
+    background-color: #F5F8FA;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+.imagem-mural-baixo{
+    width: 45%;
+    height: auto;
+}
+
+#coluna-mural-baixo{
+    width: 55%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.texto-mural-baixo{
+    width: 90%;
+    height: auto;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.icone-mural-baixo{
+    width: 100%;
+    display:grid;
+    justify-content: center;
+    margin: 0px auto 0px auto;
+
+}
+
+#conteudo-carroseu{
+    height: auto;
+    width: 45%;
+    box-shadow: 10px 5px 5px rgb(161, 160, 160);
+}
+
+#itens{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type:  x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+.itens-carrosel{
+    scroll-snap-align: start;
+
+}
+
+.imagem-carrosel{
+    width: 700px;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#conteudo-erika{
+    width: 98%;
+    background-color: #f8ebfaaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px auto;
+    border-radius: 20px;
+}
+
+.erika-texto{
+    width: 40%;
+    align-items: center;
+    padding: 0px 60px;
+
+}
+
+.erika-foto{
+    width: 55%;
+}
+
+.erika-imagem-style{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#conteudo-motivos{
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+/* Inicio conteudo slide-card*/
+
+#container {
+    display: flex ;
+    align-items: center;
+  }
+  
+  #slider-container {
+    height: 400px;
+    width: 98%;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #7f433f;
+    border-top: 8px solid #7f433f;
+    opacity: 0.3;
+  }
+  
+
+  
+  #slider-container .btn.inactive {
+    border-color: #7f433f86
+  }
+  
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+  }
+  
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+  
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+
+  }
+  
+  #slider-container #slider .slide {
+    height: 90%;
+    margin: auto 20px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #7f433f;
+    border-radius: 5px;
+    text-align: center ;
+    height: 320px;
+    
+  }
+  
+
+  
+  @media only screen and (min-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(1.8% - 12px);
+    }
+  
+  }
+  
+  @media only screen and (max-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(1.8% - 20px);
+    }
+  
+  }
+  
+  @media only screen and (max-width: 900px) {
+  
+    #slider-container #slider .slide {
+      width: calc(5% - 20px);
+    }
+  
+  }
+  
+  @media only screen and (max-width: 700px) {
+  
+    #slider-container #slider .slide {
+      width: calc(8.2% - 10px);
+    }
+  
+  }
+  
+  .slide{
+      background-color: beige;
+      border: 1px solid #7f433f;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      text-align: center ;
+  }
+
+  .card-icone{
+    width: 26%;
+    margin:0px;
+}
+
+
+    @media (max-width:700px) {
+        
+        .menu{
+            display: none;
+        }
+        
+        #conteudo-cabeçalho{
+            justify-content: center;
+        }
+
+        .imagem-back {
+            border-radius: 3px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        #conteudo-inicial, #conteudo-historias,  #coluna-mural-baixo{
+            width: 90%;
+        }
+
+        #conteudo-carroseu{
+            width: 90%;
+        }
+        .imagem-carrosel{
+            width: 450px;
+        }
+
+        #conteudo-mural-topo, #conteudo-mural-baixo{
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .imagem-mural-topo, .texto-mural-topo, .imagem-mural-baixo{
+            width: 90%;
+        }
+
+        .imagem-mural-baixo{
+            margin-top: 30px;
+        }
+
+        #conteudo-erika{
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .erika-texto{
+            width: 90%;        
+            padding: 0px;
+        }
+
+        .erika-foto{
+            width: 100%;
+        }
+
+
+        .erika-imagem-style{
+            border-radius: 20px;
+            margin: 20px auto 0px auto;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+    }
