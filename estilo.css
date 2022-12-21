@@ -109,7 +109,7 @@ p {
 
 
 #conteudo-mural-topo{
-    background-color: #F5F8FA;
+    background-color: #e1eff0;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -130,7 +130,7 @@ p {
 }
 
 #conteudo-mural-baixo{
-    background-color: #F5F8FA;
+    background-color: #e1eff0;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -280,7 +280,7 @@ p {
   #slider-container #slider .slide {
     height: 90%;
     margin: auto 20px;
-    background-color: beige;
+    background-color: #e3c8c6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,13 +320,13 @@ p {
   @media only screen and (max-width: 700px) {
   
     #slider-container #slider .slide {
-      width: calc(8.2% - 10px);
+      width: calc(8% - 20px);
     }
   
   }
   
   .slide{
-      background-color: beige;
+      background-color: #e3c8c6;
       border: 1px solid #7f433f;
       border-radius: 5px;
       display: flex;
